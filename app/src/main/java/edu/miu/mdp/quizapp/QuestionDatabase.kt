@@ -27,6 +27,8 @@ abstract class QuestionDatabase:RoomDatabase() {
             context.applicationContext,
             QuestionDatabase::class.java,
             "QuestionDatabase"
-        ).build()
+        )
+//            .createFromAsset("database/Questions.db")
+            .build()
     }
 }

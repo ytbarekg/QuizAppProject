@@ -1,9 +1,10 @@
 package edu.miu.mdp.quizapp
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity
-data class Question(val id: Int,
+data class Question(@PrimaryKey val id: Int,
                     val question: String,
                     val answer: Char,
                     val choiceA: String,

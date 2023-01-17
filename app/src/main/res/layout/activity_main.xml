@@ -6,46 +6,44 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quiz App!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/questionNumber"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/question"/>
+        android:text="Question"
+        android:id="@+id/questionView"/>
     <RadioGroup
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/choiceA"
+            android:id="@+id/choiceAView"
             android:text="JVM" />
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/choiceB"
+            android:id="@+id/choiceBView"
             android:text="GCC" />
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/choiceC"
+            android:id="@+id/choiceCView"
             android:text="PVM" />
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/choiceD"
+            android:id="@+id/choiceDView"
             android:text="PVM" />
     </RadioGroup>
+
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +52,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home"
-        android:id="@+id/home"/>
+        android:text="Previous"
+        android:id="@+id/previous"/>
 
 </LinearLayout>

@@ -10,17 +10,14 @@ import androidx.room.Update
 @Dao
 interface QuestionDao {
     @Query("Select * from Question")
-    fun getAll():List<Question>
-
-    @Query("Select * from Question where id=:id")
-    fun getById(id: Int):Question
+    suspend fun get():List<Question>
 
     @Insert
-    fun addQuestion(que: Question)
+    suspend fun addQuestion(que: Question)
 
     @Update
-    fun updateQuestion(que: Question)
+    suspend fun updateQuestion(que: Question)
 
     @Delete
-    fun deleteQuestion(que: Question)
+    suspend fun deleteQuestion(que: Question)
 }

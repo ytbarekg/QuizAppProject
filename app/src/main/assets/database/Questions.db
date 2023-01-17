@@ -1,0 +1,6 @@
+insert into Question values(1, ' You can create an emulator to simulate the configuration of a particular type of Android device using a tool like ___.',
+                                             'A',
+                                             'Theme Editor\n',
+                                             'Android SDK Manager\n',
+                                             'AVD Manager\n',
+                                             'Virtual Editor\n');
